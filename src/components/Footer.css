@@ -1,0 +1,67 @@
+/* Footer Styles */
+.footer {
+    background-color: #E2F3E0; /* Soft green background for calmness */
+    color: #333; /* Dark text color for readability */
+    padding: 30px 20px; /* Spacing inside the footer */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between left and right content */
+    align-items: center; /* Align items vertically */
+}
+
+.footer-content {
+    width: 100%; /* Full width for the container */
+    max-width: 1200px; /* Max width for the container */
+    margin: 0 auto; /* Center the footer content */
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between left and right sections */
+    flex-wrap: wrap; /* Wrap content for responsiveness */
+}
+
+.footer-left {
+    flex: 1; /* Left section takes 1 part of space */
+    font-size: 0.9em; /* Slightly smaller font */
+}
+
+.footer-left p {
+    margin: 0; /* Remove default margin */
+}
+
+.footer-right {
+    display: flex; /* Flexbox layout for links */
+    flex: 1; /* Right section takes 1 part of space */
+    justify-content: flex-end; /* Align links to the right */
+    flex-wrap: wrap; /* Wrap links for smaller screens */
+}
+
+.footer-right a {
+    color: #4CAF50; /* Calming green color for links */
+    margin-left: 15px; /* Spacing between links */
+    text-decoration: none; /* Remove default underline */
+    font-size: 0.9em; /* Font size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer-right a:hover {
+    color: #388E3C; /* Slightly darker green on hover */
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items */
+    }
+
+    .footer-left, .footer-right {
+        text-align: center; /* Center text for both sections */
+        flex: unset; /* Remove flex basis */
+        margin-bottom: 15px; /* Add spacing between sections */
+    }
+
+    .footer-right {
+        justify-content: center; /* Center links on mobile */
+    }
+
+    .footer-right a {
+        margin: 10px; /* Add spacing between links */
+    }
+}

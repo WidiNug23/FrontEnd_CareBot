@@ -1,0 +1,155 @@
+.div-kalkulator {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 0px;
+  background-color: #ebf3e8;
+}
+
+.h1-kalkulator {
+  color: #00796b; /* Deep teal for the main title */
+  text-align: center;
+  font-size: 2.5em; /* Larger title size */
+  margin-bottom: 30px; /* More space below the title */
+}
+
+.h2-kalkulator {
+  color: #00796b; /* Teal for subheadings */
+  font-size: 2em; /* Subheading size */
+  margin-bottom: 20px; /* Space below subheading */
+  text-align: center;
+}
+
+.kalkulator-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.form-kalkulator {
+  flex: 1; /* Allow the form to grow */
+  padding: 20px; /* Increased padding for better spacing */
+  background-color: #ffffff; /* White background for form */
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-width: 300px; /* Minimum width for form */
+  margin-right: 20px; /* Spacing between form and results */
+}
+
+.flex-container {
+  display: flex; /* Create a flex container for the left and right sides */
+  justify-content: space-between; /* Space between left and right sides */
+}
+
+.left-side, .right-side {
+  flex: 1; /* Allow both sides to grow equally */
+  margin-right: 20px; /* Spacing between left and right sides */
+}
+
+.right-side {
+  margin-right: 0; /* Remove margin from the right side */
+}
+
+.label-kalkulator {
+  color: #004d40; /* Darker color for labels */
+  font-weight: bold;
+  margin-bottom: 8px; /* More space below labels */
+  display: block;
+}
+
+.input-kalkulator,
+.select-kalkulator {
+  width: 100%; /* Full width for inputs */
+  padding: 12px; /* Increased padding for better touch */
+  margin-bottom: 15px; /* Space between inputs */
+  border: 1px solid #b2dfdb; /* Light teal border */
+  border-radius: 8px; /* More rounded corners */
+  font-size: 1em;
+  transition: border-color 0.2s; /* Smooth border color transition */
+}
+
+.input-kalkulator:focus,
+.select-kalkulator:focus {
+  border-color: #00796b; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.button-kalkulator {
+  width: 100%; /* Full width for button */
+  padding: 12px; /* Increased padding */
+  background-color: #86A789; /* Teal background */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px; /* More rounded corners */
+  font-size: 1.1em; /* Slightly larger font */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-kalkulator:hover {
+  background-color: #004d40; /* Darker teal on hover */
+}
+
+.results-container {
+  flex: 1; /* Allow results to grow */
+  min-width: 250px;
+  margin-top: 20px; /* Spacing above results */
+  padding: 20px; /* Increased padding for better spacing */
+  background-color: #ffffff;
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px; /* More spacing between result items */
+}
+
+.result-label {
+  font-weight: bold;
+  color: #004d40; /* Darker color for labels */
+}
+
+.result-value {
+  color: #00796b; /* Teal for values */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .kalkulator-container {
+      flex-direction: column; /* Stack items on small screens */
+  }
+
+  .form-kalkulator {
+      margin-right: 0; /* Reset margin for stacking */
+      margin-bottom: 20px; /* Space between form and results */
+  }
+
+  .flex-container {
+      flex-direction: column; /* Stack left and right sides on small screens */
+  }
+
+  .left-side, .right-side {
+      margin-right: 0; /* Remove margin for stacking */
+      margin-bottom: 20px; /* Space between sections */
+  }
+}
+
+@media (max-width: 480px) {
+  .h1-kalkulator {
+      font-size: 1.8em; /* Smaller title for mobile */
+  }
+
+  .h2-kalkulator {
+      font-size: 1.5em; /* Smaller subheading for mobile */
+  }
+
+  .input-kalkulator,
+  .select-kalkulator,
+  .button-kalkulator {
+      padding: 10px; /* Reduce padding on smaller screens */
+      font-size: 0.9em; /* Smaller font size */
+  }
+}
